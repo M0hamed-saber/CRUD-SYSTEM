@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center py-5">
+        <h1 class="py-2 position-relative">Bookmarker</h1>
+    </div>
+
+    <div class="w-100 p-3 py-1 mt-3 d-flex flex-column justify-content-center align-items-center gap-4">
+        <h2 class="d-flex">
+            <i class="fa-solid fa-bookmark py-1 pe-2"></i>
+            <p>Bookmark your favorite sites</p>
+            <i class="fa-solid fa-bookmark py-1 px-2"></i>
+        </h2>
+    </div>
+
+    <div class="mb-3 container">
+        <label for="BookmarkName" class="form-label"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+        <input type="text" class="form-control" id="BookmarkName" placeholder="Bookmark Name">
+    </div>
+    <div class="mb-3 container">
+        <label for="BookmarkUrl" class="form-label"><i class="fa-solid fa-link pe-2"></i> Site URL</label>
+        <input type="text" class="form-control" id="BookmarkUrl" placeholder="Website URL">
+    </div>
+
+    <div class="text-center py-5">
+        <button class="btn btn-danger" onclick=Submit() type="button">Submit</button>
+    </div>
+
+    <div class="container"> 
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
